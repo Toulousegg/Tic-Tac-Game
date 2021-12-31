@@ -214,3 +214,5 @@ elif respuesta == 'mal':
 
         elif prefiero == 'salir': #Acá se debería salir auto
             print('Adiós, ' + nombre)
+elif respuesta:
+    print('respuesta incorrecta')
