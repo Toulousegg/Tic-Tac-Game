@@ -1,6 +1,10 @@
 import random
 
 def JuegoTic_Tac():
+    #jugador1 = input('Jugador 1, dime tu nombre: ')
+    #jugador2 = input('Jugador 2, dime tu nombre: ')
+    
+    print('Disfruten,')
     class TicTacToe:
 
         def __init__(self):
@@ -89,7 +93,7 @@ def JuegoTic_Tac():
 
             player = 'X' if self.get_random_first_player() == 1 else 'O'
             while True:
-                print(f"Player {player} turn")
+                print('Turno de ' + player)
 
                 self.show_board()
 
@@ -103,12 +107,12 @@ def JuegoTic_Tac():
 
                 # checking whether current player is won or not
                 if self.is_player_win(player):
-                    print(f"Player {player} wins the game!")
+                    print(player + ' gana el juego')
                     break
 
                 # checking whether the game is draw or not
                 if self.is_board_filled():
-                    print("Match Draw!")
+                    print("Empate")
                     break
 
                 # swapping the turn
